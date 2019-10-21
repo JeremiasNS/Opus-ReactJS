@@ -10,29 +10,32 @@ import Main from './main';
 
      constructor(props){
          super(props)
-         this.titleWasClicked = this.titleWasClicked.bind(this)
+         this.titleWasClickedCad = this.titleWasClickedCad.bind(this)
+         this.titleWasClickedEmp = this.titleWasClickedEmp.bind(this)
+         
          
          this.state={
              num: ''
          };
      }
 
-     titleWasClicked (event){
+     titleWasClickedCad (event){
 
         let num = "a";
         
          event.preventDefault()
          const {dataCallbalck} = this.props
+             dataCallbalck('candidato')
+    
          
-         if(num == "b"){
-             dataCallbalck('deu certo')
-        }else{
-            dataCallbalck('deu errado')
-        }
+     }
 
+     titleWasClickedEmp (event){
 
+         event.preventDefault()
+         const {dataCallbalck} = this.props
+             dataCallbalck('empŕesa')
 
-         
      }
     
     render(){
@@ -44,19 +47,19 @@ import Main from './main';
                 <ul>
                     <li><a>Candidato</a>
                         <ul className="dropdown1">
-                            <li><a onClick={this.titleWasClicked} >Cadastrar Candidato</a></li>
+                            <li><a onClick={this.titleWasClickedCad} >Cadastrar Candidato</a></li>
                             <li><a>Consultas do Candidato</a></li>
                         </ul>
                     </li>
                     <li><a>Empresa</a>
                         <ul className="dropdown1">
-                            <li><a onClick={this.titleWasClicked}>Cadastrar Empresa</a></li>
+                            <li><a onClick={this.titleWasClickedEmp}>Cadastrar Empresa</a></li>
                             <li><a>Consultas da Empresa</a></li>
                         </ul>
                     </li>
                     <li><a>Vagas</a>
                         <ul className="dropdown1">
-                            <li><a onClick={this.titleWasClicked} id="b">Cadastrar Vagas</a></li>
+                            <li><a onClick={this.titleWasClickedVag} >Cadastrar Vagas</a></li>
                             <li><a>Consultas de Vagas</a></li>
                         </ul>
                     </li>
