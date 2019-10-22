@@ -27,6 +27,6 @@ main {
     background-color: #282c34c7;
 }
 
-.middle {
+.body {
     flex: 1 1 300px;
 }

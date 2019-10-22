@@ -12,7 +12,7 @@ import Main from './main';
          super(props)
          this.titleWasClickedCad = this.titleWasClickedCad.bind(this)
          this.titleWasClickedEmp = this.titleWasClickedEmp.bind(this)
-         
+         this.titleWasClickedVag = this.titleWasClickedVag.bind(this)
          
          this.state={
              num: ''
@@ -20,27 +20,24 @@ import Main from './main';
      }
 
      titleWasClickedCad (event){
-
-        let num = "a";
-        
          event.preventDefault()
          const {dataCallbalck} = this.props
              dataCallbalck('candidato')
-    
-         
      }
 
      titleWasClickedEmp (event){
-
          event.preventDefault()
          const {dataCallbalck} = this.props
-             dataCallbalck('empŕesa')
-
+             dataCallbalck('empresa')
      }
     
+    titleWasClickedVag (event){
+        event.preventDefault()
+        const {dataCallbalck} = this.props
+            dataCallbalck('vaga')
+    }
+
     render(){
-
-
     return(
         <div className="Menu">
             <nav>

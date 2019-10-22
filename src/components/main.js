@@ -7,36 +7,42 @@ import CadVaga from './CadVaga';
 import ReactDOM from 'react-dom';
 
 
+
 import './main.css';
 
 
 class Main extends Component{
-
+  
   handleDataCallback(txtMsg) {
-    alert(txtMsg)
-    console.log(this)
-    ReactDOM.render(<CadEmpresa/>, document.getElementById('middle'));
 
+    if(txtMsg == "empresa"){
+      ReactDOM.render(<CadEmpresa />, document.getElementById('middle'));
+    }else if(txtMsg == "vaga"){
+      ReactDOM.render(<CadVaga />, document.getElementById('middle'));
+    }else if(txtMsg == "candidato"){
+      ReactDOM.render(<CadCandidato />, document.getElementById('middle'));
+    }
+    
   }
-
+  
   render (){
-
-      return(
+    return(
       <div className="Main">
         <header></header>
          <Menu dataCallbalck={this.handleDataCallback}/>
         <main>
           <div className="left"></div>
-          <div className="middle">        
-          </div>
+          <div id="middle" className="body"></div>
           <div className="right"></div>
         </main>
         <Footer/>
       </div> 
       );
     }
-}
+  }
 
 
+  export default Main; 
+ 
 
-export default Main; 
+
