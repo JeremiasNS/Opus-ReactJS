@@ -1,10 +1,5 @@
 import React, { Component }from 'react';
-import ReactDOM from 'react-dom';
 import './Menu.css'
-import CadEmpresa from './CadEmpresa';
-import Main from './main';
-
-
 
  class Menu extends Component{
 

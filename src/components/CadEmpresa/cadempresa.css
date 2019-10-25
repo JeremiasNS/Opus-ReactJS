@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:flex-start;
+    
+    padding-left: 20%;
+}
+
+input{
+    flex: 1 0 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.GridLayout1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: grid;
+    align-items: center;
+    grid-row-gap: 16%;
+    grid-template-columns: auto auto auto auto;
+}
+
+.GridLayout1 label {
+    grid-column: 1;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.InlineLayout1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline;
+}
+
+.BtnEnviar {
+    display: inline;
+    padding-left: 100px;
+}

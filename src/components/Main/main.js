@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Menu from './Menu';
-import Footer from './Footer';
-import CadEmpresa from './CadEmpresa';
-import CadCandidato from './CadCandidato/MainCadCandidato';
-import CadVaga from './CadVaga';
+import Menu from '../Menu/Menu';
+import Footer from '../Footer/Footer';
+import CadEmpresa from '../CadEmpresa/CadEmpresa';
+import CadCandidato from '../CadCandidato/MainCadCandidato';
+import CadVaga from '../CadVaga';
 import ReactDOM from 'react-dom';
 
 
