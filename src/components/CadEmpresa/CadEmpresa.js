@@ -5,54 +5,64 @@ function CadEmpresa (){
     return(
         <div className="CadEmpresa">
             <h1>Dados Empresariais</h1>
-            <form>
-            Os Campos do formulário que possuem asteristico são obrigatórios
-            <label>*Login: (somente letras e números)</label>
-            <br/><input type="text" ></input>
-            <label>*Senha:</label>
-            <input type="password"></input>
-            <label>*Redigite a senha: </label>
-            <input type="password"></input>
+            <form className="form1">
+            <p>Os Campos do formulário que possuem asteristico são obrigatórios</p>
+            <fieldset>
+                <legend>Acesso</legend>
+                <label>*Login: (somente letras e números)</label><br/>
+                <input type="text" ></input><br/>
+                <label>*Senha:</label><br/>
+                <input type="password"></input><br/>
+                <label>*Redigite a senha: </label><br/>
+                <input type="password"></input><br/>
+            </fieldset>
 
-            <div className="GridLayout1">
-            <label>*Razão social: </label>
-            <input type="text"></input>
-            <label>*CNPJ: (Somente números): </label>
-            <input ClassName="cpf" type="number"></input>
-            </div>
+            <fieldset>
+                <legend>Informações do Proprietário</legend>
+                <div className="GridLayout1">
+                <label>*Razão social: </label><br/>
+                <input type="text"></input><br/>
+                <label>*CNPJ: (Somente números): </label><br/>
+                <input ClassName="cpf" type="number"></input><br/>
+                </div>
 
-            <label>*Área de atuação: </label>
-            <input type="text"></input>
-            
-            <label>*Endereço: </label>
-            <input type="text"></input>
-            <label>*Tipo de Endereço: </label>
-            <input type="text"></input>
+                <label>*Área de atuação: </label><br/>
+                <input type="text"></input><br/>
 
-            <div className="InlineLayout1">                        
-            <label>*Bairro: </label>
-            <input type="text"></input>
-            <label>*Cidade: </label>
-            <input type="text"></input>
-            </div>
+                <label>*Endereço: </label><br/>
+                <input type="text"></input><br/>
+                <label>*Tipo de Endereço: </label><br/>
+                <input type="text"></input><br/>
 
-            <label>*CEP: (Somente números)</label>
-            <input type="number"></input>
-            
-            <label>*E-mail: </label>
-            <input type="email"></input>
-            <label>*Confirme o seu e-mail: </label>
-            <input type="email"></input>
-            
-            <label>*Telefone comercial: (somente números / com DDD) </label>
-            <input type="tel" placeholder="(DD)0000-0000"></input>
-            <label>*Fax: (somente números / com DDD) </label>
-            <input type="tel" placeholder="(DD)0000-0000"></input>
-            <label>Desejo receber notícias por e-mail</label>
-            <input type="checkbox"/>
+                <div className="InlineLayout1">                        
+                <label>*Bairro: </label><br/>
+                <input type="text"></input><br/>
+                <label>*Cidade: </label><br/>
+                <input type="text"></input><br/>
+                </div>
+
+                <label>*CEP: (Somente números)</label><br/>
+                <input type="number"></input><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contato</legend>
+
+                <label>*E-mail: </label><br/>
+                <input type="email"></input><br/>
+                <label>*Confirme o seu e-mail: </label><br/>
+                <input type="email"></input><br/>
+
+                <label>*Telefone comercial: (somente números / com DDD) </label><br/>
+                <input type="tel" placeholder="(DD)0000-0000"></input><br/>
+                <label>*Fax: (somente números / com DDD) </label><br/>
+                <input type="tel" placeholder="(DD)0000-0000"></input><br/>
+                <label>Desejo receber notícias por e-mail</label><br/>
+                <input type="checkbox"/><br/>
+            </fieldset>
            
+                <input className="BtnEnviar" type="submit" value="Enviar"></input>
             </form>
-            <input ClassName="BtnEnviar" type="submit" value="Enviar"/>
             
         </div>
     );
