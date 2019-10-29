@@ -3,49 +3,36 @@ import './cadempresa.css';
 import api from '../Services/api'
 
 
-class CadEmpresa extends Component (){
-    constructor(props){
-        super(props);
+ export default function CadEmpresa (){
         
-        const [username, setUserName] = useState('');
+    const [username, setUserName] = useState('');
         
-            acesso = {
-            login:'',
-            senha:'',
-            email:'',
-            receberNoticias:true
-            }
-
-
-            empresa = {
-            nome: '',
-            acesso: acesso, 
-            razaoSocial: '',
-            cnpj: 0,
-            areaAtuacao: '',
-            endereco: '',
-            tipoEndereco: '',
-            bairro: '',
-            cidade: '',
-            cep: 0,
-            telComercial: 0
+        const empresa = {
+        nome: '',
+        login: '',
+        senha: '',
+        email: '', 
+        cnpj: 0,
+        razaoSocial: '',
+        areaAtuacao: '',
+        eendereco: '',
+        tipoEndereco: '',
+        bairro: '',
+        cep: 0,
+        telComercial: 0,
+        fax: 0
         }
-    }
-    async function handleSubmit(e){
+    
+        async function handleSubmit(e){
         e.preventDefault();
 
         const response = await api.post('/');
 
+        }
 
-    }
-
-
-
-
-
-    return(
-        <div className="CadEmpresa">
-            <h1>Dados Empresariais</h1>
+        return(
+            <div className="CadEmpresa">
+                <h1>Dados Empresariais</h1>
             <form className="form1" onSubmit={handleSubmit}>
             <p>Os Campos do formulário que possuem asteristico são obrigatórios</p>
             <fieldset>
@@ -111,5 +98,3 @@ class CadEmpresa extends Component (){
         </div>
     );
 }
-
-export default CadEmpresa;
