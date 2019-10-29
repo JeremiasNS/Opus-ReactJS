@@ -3,21 +3,19 @@ import './cadempresa.css';
 import api from '../Services/api'
 
 
-class CadEmpresa extends Component (){
-    constructor(props){
-        super(props);
+ export default function CadEmpresa (){
         
-        const [username, setUserName] = useState('');
+    const [username, setUserName] = useState('');
         
-            acesso = {
-            login:'',
-            senha:'',
-            email:'',
-            receberNoticias:true
-            }
+        const acesso = {
+        login:'',
+        senha:'',
+        email:'',
+        receberNoticias:true
+        }
 
 
-            empresa = {
+            const empresa = {
             nome: '',
             acesso: acesso, 
             razaoSocial: '',
@@ -30,18 +28,13 @@ class CadEmpresa extends Component (){
             cep: 0,
             telComercial: 0
         }
-    }
-    async function handleSubmit(e){
+    
+        async function handleSubmit(e){
         e.preventDefault();
 
         const response = await api.post('/');
 
-
-    }
-
-
-
-
+        }
 
     return(
         <div className="CadEmpresa">
@@ -111,5 +104,3 @@ class CadEmpresa extends Component (){
         </div>
     );
 }
-
-export default CadEmpresa;
