@@ -11,9 +11,6 @@ form {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    
-    
-    
 }
 
 h1, p {
@@ -45,6 +42,6 @@ fieldset{
 
 .BtnEnviar {
     margin-top: 2%;
+    margin-bottom: 2%;
     align-self: center;
-    
 }

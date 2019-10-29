@@ -1,6 +1,7 @@
 import React  from 'react';
-import DadosPessoais from './DadosPessoais'
-import ExpProfissional from './ExpProfissional'
+import DadosPessoais from './DadosPessoais';
+import ExpProfissional from './ExpProfissional';
+import './maincadcandidato.css';
 
 export default function CadCandidato(){
     return(

@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gridCadPessoa1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: start;
+    align-content: start;
+}
+
+textarea{
+    resize: none;
+    
+}
+
+.BtnEnviarCadCandidato{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+}

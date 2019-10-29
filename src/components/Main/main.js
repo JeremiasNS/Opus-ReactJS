@@ -3,10 +3,8 @@ import Menu from '../Menu/Menu';
 import Footer from '../Footer/Footer';
 import CadEmpresa from '../CadEmpresa/CadEmpresa';
 import CadCandidato from '../CadCandidato/MainCadCandidato';
-import CadVaga from '../CadVaga';
+import CadVaga from '../CadVaga/CadVaga';
 import ReactDOM from 'react-dom';
-
-
 
 import './main.css';
 
